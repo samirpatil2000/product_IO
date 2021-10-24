@@ -39,7 +39,7 @@ def getProduct(request:HttpRequest,pk:int):
 
 @csrf_exempt
 @api_view(['POST'])
-@permission_classes([IsAuthenticated,])
+# @permission_classes([IsAuthenticated,])
 def createProduct(request: HttpRequest):
     if request.method == 'POST':
         serializer = ProductSerializer(data=request.data)
@@ -51,7 +51,7 @@ def createProduct(request: HttpRequest):
 
 @csrf_exempt
 @api_view(['PUT'])
-@permission_classes([IsAuthenticated,])
+# @permission_classes([IsAuthenticated,])
 def updateProduct(request: HttpRequest,pk:int):
     if request.method == 'PUT':
         try:
@@ -120,7 +120,7 @@ def getSingleOrder(order:'Order')->dict:
     return order_data
 
 @api_view(['GET'])
-@permission_classes([IsAuthenticated,])
+# @permission_classes([IsAuthenticated,])
 def getUserOrders(request:HttpRequest,username:str):
     if request.method == 'GET':
         try:
@@ -135,7 +135,7 @@ def getUserOrders(request:HttpRequest,username:str):
             return Response({"status": "404","message": "User Does Not Exist"})
 
 @api_view(['GET'])
-@permission_classes([IsAuthenticated,])
+# @permission_classes([IsAuthenticated,])
 def getOrders(request:HttpRequest):
     if request.method == 'GET':
         try:

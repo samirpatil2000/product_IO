@@ -14,19 +14,25 @@
 
 ##### 3 . createUser [POST]
 `http://localhost:8000/createUser`
+
+
 ####### Request:
-`{
+
+```
+{
   "username": "samir",
   "password": "123"
-}`
+}
+```
 
 ####### Response:
-`{
+```
+{
     "username": "samir",
     "token": "67ea0c3129f2a3ee490347b5360a2cc8b838d0c5",
     "id": 2
-}`
-
+}
+```
 
 
 
