@@ -6,7 +6,7 @@ urlpatterns = [
     path('getProductList/', getProductList),
     path('getProduct/<int:pk>/',getProduct),
     path('createProduct/',createProduct),
-    path('createUser/',get_or_createUser),
+    path('get_or_createUser/',get_or_createUser),
     path('updateProduct/<int:pk>/',updateProduct),
     path('getOrders/',getOrders),
     path('getUserOrders/<str:username>',getOrders),
