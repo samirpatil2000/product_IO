@@ -51,3 +51,50 @@
 ##### 4 . getUserOrders [GET]
 `http://localhost:8000/getUserOrders/<str:username>`
 
+# installation
+
+
+## Running the Project Locally
+
+* First, clone the repository to your local machine:
+
+```bash
+https://github.com/samirpatil2000/product_IO.git
+```
+* Create & Activate Virtual Environment For Windows
+
+```bash
+py -m venv env
+.\env\Scripts\activate
+```
+
+* Create & Activate Virtual Environment For MacOs/Linux
+
+```bash
+python3 -m venv env
+source env/bin/activate
+```
+
+
+* Install the requirements:
+
+```bash
+pip install -r requirements.txt
+```
+
+
+* Create the database:
+
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+
+* Finally, run the development server:
+
+```bash
+python manage.py runserver
+```
+
+The project will be available at **127.0.0.1:8000**.
+
